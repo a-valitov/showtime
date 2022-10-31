@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/popularsFragment">
+
+    <fragment
+        android:id="@+id/popularsFragment"
+        android:name="com.avalitov.showtime.pages.populars.PopularsFragment"
+        android:label="PopularsFragment"
+        tools:layout="@layout/fragment_populars">
+
+<!--        <action-->
+<!--            android:id="@+id/action_splashFragment_to_nav_root"-->
+<!--            app:destination="@id/nav_root"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popUpTo="@id/splashFragment"-->
+<!--            app:popUpToInclusive="true"-->
+<!--            />-->
+
+        <action
+            android:id="@+id/action_popularsFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.avalitov.showtime.pages.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.avalitov.showtime.pages.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
