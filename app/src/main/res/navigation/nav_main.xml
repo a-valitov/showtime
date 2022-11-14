@@ -11,15 +11,6 @@
         android:label="PopularsFragment"
         tools:layout="@layout/fragment_populars">
 
-<!--        <action-->
-<!--            android:id="@+id/action_splashFragment_to_nav_root"-->
-<!--            app:destination="@id/nav_root"-->
-<!--            app:enterAnim="@anim/slide_in_right"-->
-<!--            app:exitAnim="@anim/slide_out_left"-->
-<!--            app:popUpTo="@id/splashFragment"-->
-<!--            app:popUpToInclusive="true"-->
-<!--            />-->
-
         <action
             android:id="@+id/action_popularsFragment_to_favoritesFragment"
             app:destination="@id/favoritesFragment"
@@ -31,6 +22,7 @@
         android:name="com.avalitov.showtime.pages.favorites.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
+
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.avalitov.showtime.pages.settings.SettingsFragment"

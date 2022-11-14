@@ -9,6 +9,9 @@
 
     <!--  Settings  -->
     <string name="settings_hello">SETTINGS</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  Bottom Navigation Menu  -->
+    <string name="menu_title_populars">Популярное</string>
+    <string name="menu_title_favorites">Избранное</string>
+    <string name="menu_title_settings">Настройки</string>
 </resources>
